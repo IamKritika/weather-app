@@ -38,6 +38,7 @@ export class HomeComponent {
     enableCitySearch(event:Event) {  
       this.weatherForecastData=[];          
       this.disabledForecastButton=!this.cityName;  
+      this.errorMessage = null;
     }
 
     onResetControls(){

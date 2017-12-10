@@ -9,7 +9,7 @@
     </form>  
 
     <!-- error message -->
-    <p *ngIf="errorMessage" [innerHTML]="errorMessage"></p> 
+    <p *ngIf="errorMessage" [innerHTML]="errorMessage" class="alert error-msg"></p> 
     
     <!-- displaying forecast for a particular city -->
     <div class="grid" *ngIf="weatherForecastData && weatherForecastData.length">

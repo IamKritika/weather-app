@@ -237,4 +237,6 @@ input[type="text"]{
     }
   }
   
-  
+.error-msg{
+    color:red;
+}
