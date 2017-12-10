@@ -1,0 +1,8 @@
+<div class="card">
+        <div class="card-header" [innerHTML]=" weather.date"></div>
+        <div class="card-body">
+          <h4 class="card-title" [innerHTML]="weather.description"></h4>
+          <p class="card-text" [innerHTML]="'Wind speed (meter/sec):  ' + weather.windSpeed"></p>
+          <p class="card-text" [innerHTML]="'Temperature (celsius): '+ weather.temperature "></p>
+        </div>
+</div>
