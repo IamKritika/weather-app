@@ -1,4 +1,6 @@
-import {Weather} from '../model/weather'
+import {Weather} from '../model/weather';
+
+// mapping data from openweather api
 export function mapWeatherDetails(list:any):Array<Weather>{
     if(!Array.isArray(list)){
         return []

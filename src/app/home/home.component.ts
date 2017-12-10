@@ -18,12 +18,15 @@ export class HomeComponent {
     constructor(private _weatherService:ForecastService) {
     }
 
+    // to get weather forecast
     getWeatherForecast() {  
     
     this.errorMessage=null;    
+    // call to api
     this._weatherService.getWeatherForecast(this.cityName)
          .subscribe((data:any) => {   
              let details = data && data.list?data.list:[];
+             // mapping the api data to desired form
              this.weatherForecastData= mapWeatherDetails(details);
              this.onResetControls();
             }, (error) =>  {                     
@@ -31,6 +34,7 @@ export class HomeComponent {
      ); 
     }
 
+    // enabling submit button
     enableCitySearch(event:Event) {  
       this.weatherForecastData=[];          
       this.disabledForecastButton=!this.cityName;  

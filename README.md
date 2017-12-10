@@ -5,13 +5,18 @@ Weather app is the little web app for displaying the weather report from openwea
 
 ## App features
 
-1. Display today weather
-2. Display forecast weather  
-3. Search by city/zip code 
-4. Open weather api integration 
-5. Convert celsius to fahrenheit
+1. Display weather forecast of a city for next 5 days
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.19-3.
+
+#Quickstart
+
+ git clone https://github.com/IamKritika/weather-app.git my-proj
+ cd my-proj
+ npm install -g @angular/cli
+ npm install
+ ng serve
+
+Application would locally run on localhost:4200
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -53,18 +58,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-## Angular 2 Style Guide
-
-[Angular 2 Style Guide](https://angular.io/guide/styleguide)
-
 ## Run all the tslint and codelyzer rules
 
 Method A - npm run lint
@@ -74,3 +67,9 @@ Method B - Windows based command with backslash
 $ .\node_modules\.bin\tslint -c tslint.json  .\src\app\weather\weather.service.ts
 
 $ .\node_modules\.bin\tslint -c tslint.json  .\src\app\*\*.ts
+
+
+## If there would have been more time
+
+- test suite could have been completed
+- styling could have been better

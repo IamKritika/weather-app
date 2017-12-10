@@ -1,4 +1,5 @@
 <section class="weather-search" class="form-group">
+    <!-- search form -->
     <form>
         <div class="form-group">
         <label for="city">City Name:</label>
@@ -6,10 +7,13 @@
         </div>
         <button class="btn btn-primary" [disabled]="disabledForecastButton" (click) ="getWeatherForecast()" type="submit">Forecast</button>          
     </form>  
+
+    <!-- error message -->
     <p *ngIf="errorMessage" [innerHTML]="errorMessage"></p> 
     
+    <!-- displaying forecast for a particular city -->
     <div class="grid" *ngIf="weatherForecastData && weatherForecastData.length">
-        <weather-card *ngFor="let item of weatherForecastData; let i = index;" [weather]="item">    
+        <weather-card *ngFor="let item of weatherForecastData; let i = index;" [weather]="item">
             </weather-card>
     </div>
    

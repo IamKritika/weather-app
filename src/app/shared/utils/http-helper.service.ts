@@ -10,6 +10,8 @@ export class HttpHelperService {
   constructor(private http: Http) { 
   }
 
+
+  // generic get call function
   public getCall(url: string): Observable<any> {
     return this.http.get(url)
       .map(resp => {
@@ -23,6 +25,7 @@ export class HttpHelperService {
       .catch(this.handleError);
   }
 
+  // error handling
 private handleError (error: any) {
     try {
       let err: any = {};
